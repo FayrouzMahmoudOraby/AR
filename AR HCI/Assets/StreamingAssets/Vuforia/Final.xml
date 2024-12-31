@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="background" size="300.000000 225.000000" />
+    <ImageTarget name="lamp" size="300.000000 300.000000" />
+    <ImageTarget name="mesh" size="400.000000 225.274719" />
+  </Tracking>
+</QCARConfig>
