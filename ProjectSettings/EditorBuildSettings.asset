@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/ExampleAssets/Scenes/CRUD Scene.unity
+    guid: 74183fa627100bc4a8f30e39496ecb1c
+  - enabled: 1
+    path: Assets/ExampleAssets/Scenes/Tasks Scene.unity
+    guid: 7e54e41709287ec4d8c86508377f6b46
+  - enabled: 1
+    path: Assets/ExampleAssets/Scenes/Engineers Scene.unity
+    guid: 558c0ee4b689a524d99a1b4c731457de
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}

@@ -99,7 +99,7 @@ namespace UnityEditor.U2D.Sprites
             public readonly GUIContent yLabel = EditorGUIUtility.TextContent("Y");
             public readonly GUIContent offsetLabel = EditorGUIUtility.TrTextContent("Offset");
             public readonly GUIContent paddingLabel = EditorGUIUtility.TrTextContent("Padding");
-            public readonly GUIContent automaticSlicingHintLabel = EditorGUIUtility.TrTextContent("To obtain more accurate slicing results, manual slicing is recommended!");
+            public readonly GUIContent automaticSlicingHintLabel = EditorGUIUtility.TrTextContent("Texture is in compressed format. For better result please use manual slicing.", "Compressed textures may have artifacts that will affect the automatic slicing result. It is recommended to use manual slicing for better result.");
             public readonly GUIContent customPivotLabel = EditorGUIUtility.TrTextContent("Custom Pivot");
             public readonly GUIContent keepEmptyRectsLabel = EditorGUIUtility.TrTextContent("Keep Empty Rects");
             public readonly GUIContent isAlternateLabel = EditorGUIUtility.TrTextContent("Is Alternate");
@@ -413,7 +413,7 @@ namespace UnityEditor.U2D.Sprites
         private void OnAutomaticGUI()
         {
             float spacing = 38f;
-            var texture = m_TextureDataProvider.GetReadableTexture2D();
+            var texture = m_TextureDataProvider.texture;
             if (texture != null && GraphicsFormatUtility.IsCompressedFormat(texture.format))
             {
                 EditorGUILayout.LabelField(s_Styles.automaticSlicingHintLabel, s_Styles.notice);
